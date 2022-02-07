@@ -18,6 +18,7 @@ function coinFlip() {
   if(Math.random() > 0.49) {
     return "heads";
   }
+  
   return "tails";
 }
 
@@ -42,9 +43,11 @@ function coinFlip() {
 
 function coinFlips(flips) {
   let results = [];
+
   for(let i=0; i<flips; i++) {
     results.push(coinFlip());
   }
+
   return results;
 }
 
@@ -92,17 +95,19 @@ function countFlips(array) {
 function flipACoin(call) {
   let flip = coinFlip();
   let result = "lose";
+
   if(flip == call) {
     result = "win";
   }
+
   const summary = {
     call: call,
     flip: flip,
     result: result
   }
+
   return summary
 }
-
 
 /** Export 
  * 
