@@ -1,8 +1,8 @@
-import * as coind from "./modules/coin.mjs"
+import * as coin from "./modules/coin.mjs"
 import minimist from 'minimist';
 
 const args = minimist(process.argv.slice(2));
-args[call];
+args['call'];
 
 if(args.call != "tails" && args.call != "heads") {
     console.log("Error: no input.");
